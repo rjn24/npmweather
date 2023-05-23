@@ -24,7 +24,7 @@ app.get("/",function(req,res){
             const icon = weatherData.weather[0].icon;
             const imageUrl = "http://openweathermap.org/img/wn/"+icon+"@2x.png"
             const weatherDescription = weatherData.weather[0].description;
-            res.write("<h1> temperature is = "+temp +"kelvin <h1> ");
+            res.write("<h1> temperature is = "+temp +"Centigrade<h1> ");
             res.write("<h1>   and the description is "+weatherDescription+"<h1>");
             res.write("<h1><img src= " + imageUrl + "></h1> ");
             res.send();
